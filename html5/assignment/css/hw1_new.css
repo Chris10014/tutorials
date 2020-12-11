@@ -1,0 +1,138 @@
+body {
+    padding: 1%;
+    margin: 1%;
+}
+
+header {
+    background-color: #6b8e6b;
+    background-image: url('../images/flywheel.jpg');
+    background-size: cover;
+    padding: 2%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    color:#ffffff;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 80%;
+    font-variant: small-caps;
+    background-color: #ffffff;
+    border-radius: 2px;
+    line-height: 300%;
+    width: 20%;
+    margin: 1%;
+    padding: 1px;
+}
+
+.active {
+    color: #ffffff;
+    background-color: #6b8e6b;
+    font-weight: bold;
+}
+
+.left {    
+    background-color: #6b8e6b;
+    min-height: 100vh;
+    width: 20%;   
+    float: left;
+    margin: 0% 1% 0 0;
+}
+
+.right {
+    width: 78%;
+    float: left;
+    margin: 0% 0 0 1%;
+}
+
+img {
+    display: block;
+    width: 80%;
+    margin: 10% auto;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2%;
+}
+
+h2 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* table style */
+
+table {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 90%;
+	font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 300%;
+	/* --- Ab hier meine Ergänzung --- */
+    text-align: center;
+	border-bottom: 2px solid #b6cb1b;
+}
+
+tr th {
+    background-color: #6b8e6b;
+
+    background: -moz-linear-gradient(#6b8e6b 0%, #00b766);
+    background: -webkit-linear-gradient(#6b8e6b 0%, #00b766);
+    background: -o-linear-gradient(#6b8e6b 0%, #00b766);
+    background: -ms-linear-gradient(#cdf100, #579ce6);
+    background: linear-gradient(#6b8e6b 0%, #00b766);
+
+    border: 1px solid #6b8e6b;
+    padding-left: 5px;
+    border-bottom: 2px solid #6b8e6b; 
+
+    border-radius: 5px 5px 0px 0px;
+
+    color: #ffffff;
+    /* --- Ab hier meine Ergänzung --- */
+    height: 50px;
+
+}
+
+tr td {
+    opacity: 0.8;
+    padding: 5px;
+    text-align: center;
+    /* --- Ab hier meine Ergänzung --- */
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	background-color: #dfefe6;
+	color: #000000;
+	font-size: 90%;
+}
+
+tr:hover td {
+    opacity: 1;
+}
+
+tr td:first-child,
+table tr th:first-child {
+    text-align: left;
+}
+
+/*
+tr:nth-child(even) {
+    background-color: #6b8e6b;
+}
+tr:nth-child(odd) {
+    background-color: #00b766;
+}
+*/

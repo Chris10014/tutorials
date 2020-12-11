@@ -1,0 +1,103 @@
+body {
+     background: #ffff00;     
+     margin: 4%;
+}
+
+h1 {
+    color: #ffffff;
+    font-size:150%;
+
+}
+
+header  {
+    background-color: #666666;
+    text-align: center;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #666666;
+    background: -moz-linear-gradient(#666666 0%, #00b766);
+    background: -webkit-linear-gradient(#666666 0%, #00b766);
+    background: -o-linear-gradient(#666666 0%, #00b766);
+    background: linear-gradient(#666666 0%, #00b766);
+}
+
+nav {
+    font-size: 150%;
+    font-variant: small-caps;
+}
+
+nav a {
+    display: inline-block;
+    width: 22%;
+    background-color: #ffffff;
+}
+
+h2 {
+    size: 120%;
+    background-color: #ff00ff;
+}
+
+summary {
+    font-style: normal;
+}
+
+details {
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+/* span {
+    height: 50px;
+    width: 70px;
+    background-color: green;
+} */
+
+/* div {
+    height: 50px;
+    width: 70px;
+    background-color: turquoise;
+    display: inline-block;
+    float: left;
+    overflow: auto;
+} */
+
+.half {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+
+}
+
+.whole {
+    clear: both;
+}
+
+/* p {
+    clear: both;
+    height: 50px;
+    width: 70px;
+    background-color: purple;
+    
+} */
+
+p {
+    margin: 0 auto;;
+}
+
+img {
+    width: 80px;
+}
+
+footer {
+    clear: both;
+}
