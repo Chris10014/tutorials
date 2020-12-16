@@ -15,23 +15,14 @@ $message = "Please select a strategy and press Play.";
 $names = array("Rock", "Paper", "Scissors");
 $human = isset($_POST['human']) ? ($_POST['human'] + 0) : -1; //add 0 to convert value into number
 
-if (isset($_POST['human']) && $_POST['human'] == 3) {
-    $message = "";
-    for ($c = 0; $c < count($names); $c++) {
-        for ($h = 0; $h < count($names); $h++) {
-            $result = check($h, $c);
-            $message .= "Human=$names[$h] Computer=$names[$c] Result=$result<br>";
-        }
-    }
-} else {
+if ($human > -1 && $human < 3) {
+   
     //Game will be played
     $computer = rand(0, 2);
-    if ($human != -1) {
+   
         $result = check($human, $computer);
-        $message = "Your Play=$names[$human] Computer=$names[$computer] Result=$result";
-    } else {
-        $message = "You forgot to choose a strategy.";
-    }
+       
+    
 }
 
 
@@ -92,15 +83,25 @@ function check($human, $computer)
         </p>
         <p>
 
-        <pre>
-<?= $message ?>
+            <pre>
+            <?php
+            if ($human == -1) {
+                print "Please select a strategy and press Play.\n";
+            } else if ($human == 3) {
+                for ($c = 0; $c < 3; $c++) {
+                    for ($h = 0; $h < 3; $h++) {
+                        $r = check($c, $h);
+print "Human=$names[$h] Computer=$names[$c] Result=$r\n";
+                    }
+                }
+            } else {
+print "Your Play=$names[$human] Computer Play=$names[$computer] Result=$result\n";
+            }
+           ?>
         </pre>
         </p>
     </main>
     <footer>
-
     </footer>
-
 </body>
-
 </html>
