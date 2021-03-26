@@ -4,7 +4,7 @@ session_start();
 require_once "pdo.php";
 
 if (isset($_POST['cancel'])) {
-    header('Location: view.php');
+    header('Location: index.php');
     return;
 }
 
