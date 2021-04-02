@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic Gallery</title>
+    <script>
+
+      var greeting = prompt('Bitte Namen eingeben:');
+      var imgArray = [];
+      
+        function addImg() {
+          var imgUrl = prompt('Bitte eine Bildquelle angeben.\n(http://img.com/img.png)');
+
+          imgArray[imgArray.length] = imgUrl;
+
+          document.getElementById('gallery').innerHTML = "";
+
+          renderImages(imgArray);
+
+          
+        }
+
+        function renderImages(imgArray) {
+          document.getElementById('gallery').innerHTML = "";
+
+          for (var i = 0; i < imgArray.length; i++) {
+            document.getElementById('gallery').innerHTML += "<img  src ='" + imgArray[i] + "' height = 100px>";
+          }
+        }
+
+        function removeImg() {
+            imgArray.shift();
+            renderImages(imgArray);
+        }
+
+        function removeGallery() {
+          imgArray = [];
+          document.getElementById('gallery').innerHTML = "";
+        }
+
+    </script>
+  </head>
+  <body>
+      <header>
+          <h1 id="greeting"></h1>
+          <h2>Your Dynamic Gallery.</h2>
+      </header>
+      <script>
+        if (greeting != "" && greeting != null) {
+            document.getElementById('greeting').innerHTML = "Guten Tag, " + greeting;
+          } else {
+            document.getElementById('greeting').innerHTML = "Bitte Seite neu laden und den Namen eingeben.";
+          }        
+      </script>
+    <main id="main">
+        <section>
+            <button onclick="addImg()">Add image</button>
+            <button onclick="removeImg()">Remove first image</button>
+            <button onclick="removeGallery()">Remove gallery</button>
+        </section>
+    
+        <section id="gallery"></section>  
+    </main>    
+  </body>
+</html>

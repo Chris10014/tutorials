@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Rows to a table</title>
+
+    <script>
+       /**
+       *
+       * @param {str} tableId id if the table
+       * @param {int} cells number of cells in the row
+       * @param {array} content content for each cell in an array
+       *
+       * @returns {} adds a new row with cells at the end of to the <table id="id">
+       */
+        function addRowToTable(tableId, cells, content) {
+            var tbl = document.getElementById(tableId);           
+                var newRow = tbl.insertRow();
+                for (var i = 0; i < cells; i++) {
+                    var newCell = newRow.insertCell(i);
+                    newCell.innerHTML = content[i];
+                }
+            
+
+        }
+    </script>
+
+  </head>
+  <body>
+      <header>
+          <h1>Add rows to a table with JS</h1>
+      </header>
+      <main>
+
+        <button onclick="addRowToTable('myTable', 3, ['die', 'neuen', 'zellen'])">new row</button>
+        <br><br>
+
+        <table border="1" id="myTable">
+            <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+            </tbody>
+        </table>
+      </main>
+    
+  </body>
+</html>

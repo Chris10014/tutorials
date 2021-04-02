@@ -1,0 +1,129 @@
+body {
+    padding: 1%;
+    margin: 1%;
+}
+
+header {
+    background-color: #6b8e6b;
+    background-image: url('../images/flywheel.jpg');
+    background-size: cover;
+    padding: 2%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    color:#ffffff;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 80%;
+    font-variant: small-caps;
+    background-color: #ffffff;
+    border-radius: 2px;
+    line-height: 300%;
+    width: 20%;
+    margin: 1%;
+    padding: 1px;
+}
+
+.active {
+    color: #ffffff;
+    background-color: #6b8e6b;
+    font-weight: bold;
+}
+
+.left {    
+    background-color: #6b8e6b;
+    min-height: 100vh;
+    width: 20%;   
+    float: left;
+    margin: 0% 1% 0 0;
+}
+
+.right {
+    width: 78%;
+    float: left;
+    margin: 0% 0 0 1%;
+}
+
+img {
+    display: block;
+    width: 80%;
+    margin: 10% auto;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2%;
+}
+
+h2 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: Arial, courier;
+}
+
+/* table style */
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;    
+    width: 90%;
+    margin: 0 auto;
+}
+
+th {
+    color: #ffffff;
+    line-height: 350%;
+    font-size: 120%;
+    background-color: #6b8e6b;
+    background: -moz-linear-gradient(#6b8e6b 0%, #00b766);
+    background: -webkit-linear-gradient(#6b8e6b 0%, #00b766);
+    background: -o-linear-gradient(#6b8e6b 0%, #00b766);
+    background: linear-gradient(#6b8e6b 0%, #00b766);
+    padding: 5px;
+    border: 1px solid #6b8e6b;
+    border-bottom: 5px solid #6b8e6b;    
+    border-radius: 5px 5px 0px 0px;
+}
+
+tr {
+    opacity: 0.8;
+}
+
+tr:first-child {
+    opacity: 1;
+}
+
+tr:hover {
+    opacity: 1;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    line-height: 300%;
+    font-size: 90%;
+   
+}
+
+tr th:first-child, tr td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) td {
+    background-color: #6b8e6b;
+}
+tr:nth-child(odd) td {
+    background-color: #00b766;
+}

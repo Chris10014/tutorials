@@ -1,0 +1,24 @@
+<head>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body>
+    <h1 id="title" onclick="sayGoodbye();"> Hello </h1>
+</body>
+
+<script type="text/javascript">
+    function sayGoodbye(){
+        console.log("goodbye");
+        //changes the html content to Goodbye
+        $("#title").html("Goodbye");
+        //add a new click event to the element
+        $("#title").click(function () {
+            //changes the html content to "Hello" again
+            $("#title").html("Hello");
+            // removes the added click event again to get the original one back
+            $("#title").off("click");
+        });
+    };
+</script>
