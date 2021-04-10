@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+   <title>Bootstrap</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- pulls in the main bootstrap content we need -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+    
+        <!-- start collapsed navbar -->
+        <div class="navbar-header">
+          <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#main_navbar"
+          aria-expanded="false">open!</button>
+        </div> <!-- / collapsed navbar -->
+    
+        <!-- start un-collapsed navbar -->
+        <div 
+          class="collapse navbar-collapse" 
+          id="main_navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li class="active"><a href="photos.html">All photos</a></li>
+          </ul>
+        </div><!-- / un-collapsed navbar -->
+    
+      </div><!-- / container -->
+    </nav>
+
+    <div class="container">
+      <h1>Photoalbum graffities</h1>
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="photos.html">Photos</a></li>
+      </ol>
+
+      <div class="row">
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <a href="photo1.html"><img class="photo_list" src="./images/img_1.jpg" alt="graffiti cover image" /></a>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_2.jpg" alt="full english" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_3.jpg" alt="racks of cheese" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_4.jpg" alt="something else 4" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_5.jpg" alt="something else 5" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_6.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_7.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_8.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_9.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_10.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_11.jpg" alt="something else 6" />
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-4">
+          <img class="photo_list" src="./images/img_12.jpg" alt="something else 6" />
+        </div>
+      </div><!-- / row -->
+
+    </div><!-- / container -->
+
+    
+  
+    <script src="js/jquery.min.js"></script> <!-- jquery libraries -->
+    <script src="js/bootstrap.min.js"></script> <!-- bootsrap libraries -->
+  
+  </body>
+</html>
